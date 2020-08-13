@@ -15,3 +15,10 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+import { initSelect2 } from "../plugins/init_select2";
+
+
+document.addEventListener('turbolinks:load', () => {
+  initSelect2();
+})
